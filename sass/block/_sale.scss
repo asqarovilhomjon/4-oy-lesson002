@@ -1,0 +1,217 @@
+.sale{
+    margin-top: 20px;
+    width: 100%;
+ .sale__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 26.3px;
+    .sale__card{
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        min-width: 15%;
+        max-width: 15%;
+        .item{
+            display: flex;
+            flex-direction: column;
+            .item__img{
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+            button{
+                margin-left: 10px;
+                margin-top: 10px;
+                width: 60px;
+                border: none;
+                background: #222;
+                height: 30px;
+                border-radius: 10px;
+                position: fixed;
+                color: #fff;
+                font-weight: 900;
+            }
+        }
+        .item__context{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 0;
+            p:nth-child(4){
+                font-size: 24px;
+                font-weight: 700;
+                color: #cc290a;
+            }
+            .delete{
+                display: flex;
+                gap: 10px;
+                del{
+                    color: gray;
+                }
+                p{
+                    color: #cc290a;
+                }
+            }
+            .item__stars{
+                display: flex;
+                gap: 10px;
+                i{
+                    color: #cc290a;
+                }
+            }
+        }
+    }
+ }   
+}
+
+
+@media(max-width:1368px){
+    .sale{
+       .sale__wrapper{
+        gap: 70px;
+       } 
+    }
+}
+@media(max-width:1173px){
+    .sale{
+       .sale__wrapper{
+        gap: 20px;
+.sale__card{
+    width: 20%;
+    .item__context{
+        p:nth-child(4){
+            font-size: 18px;
+            font-weight: 700;
+            color: #cc290a;
+        }
+    }
+}        
+       } 
+    }
+}
+@media(max-width:1053px){
+    .sale{
+       .sale__wrapper{
+        gap: 60px;
+.sale__card{
+    width: 20%;
+    .item__context{
+        p:nth-child(1){
+            font-size: 12px;
+            font-weight: 400;
+            color: grey;
+        }
+        p:nth-child(4){
+            font-size: 18px;
+            font-weight: 700;
+            color: #cc290a;
+        }
+    }
+}        
+       } 
+    }
+}
+@media(max-width:1013px){
+    .sale{
+       .sale__wrapper{
+        justify-content: space-around;
+        // gap: 60px;
+.sale__card{
+    width: 25%;
+    .item__context{
+        p:nth-child(1){
+            font-size: 12px;
+            font-weight: 400;
+            // color: #cc290a;
+            color: grey;
+        }
+        p:nth-child(4){
+            font-size: 18px;
+            font-weight: 700;
+            color: #cc290a;
+        }
+    }
+}        
+       } 
+    }
+}
+
+@media(max-width:862px){
+    .sale{
+       .sale__wrapper{
+        gap: 6x0px;
+.sale__card{
+    width: 50%;
+    .item{
+        .item__img{
+            h4{
+                button{
+                    background: transparent;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .item__context{
+        p:nth-child(1){
+            font-size: 12px;
+            font-weight: 400;
+            // color: #cc290a;
+            color: grey;
+        }
+        p:nth-child(4){
+            font-size: 16px;
+            font-weight: 700;
+            color: #cc290a;
+        }
+    }
+}        
+       } 
+    }
+}
+
+@media(max-width:700px){
+    .sale{
+       .sale__wrapper{
+        justify-content: space-around;
+        gap: 0;
+.sale__card{
+    min-width: 49%;
+    .item__context{
+        p:nth-child(1){
+            font-size: 12px;
+            font-weight: 400;
+            color: grey;
+        }
+        p:nth-child(4){
+            font-size: 18px;
+            font-weight: 700;
+            color: #cc290a;
+        }
+    }
+}        
+       } 
+    }
+}
+
+@media(max-width:373px){
+    .sale{
+        .sale__wrapper{
+         .sale__card{
+            .item__context{
+                .delete{
+                    del{
+                        font-size: 10px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }
+            }
+         }   
+        }
+    }
+}
